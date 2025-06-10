@@ -17,5 +17,6 @@ public class KafkaController {
     public String sendMessage(@PathVariable("message") String message, @Nullable @RequestParam("topic") String topic) {
         producerService.sendMessageToTopic(topic, message);
         return "done";
+        
     }
 }
