@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/kafka")
 public class KafkaController {
 
-    
+
     @Autowired
     ProducerService producerService;
 
