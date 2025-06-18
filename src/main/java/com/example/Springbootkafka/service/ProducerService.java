@@ -11,7 +11,6 @@ public class ProducerService {
     @Autowired
     KafkaTemplate<String, String> kafkaTemplate;
     
-
     public void sendMessageToTopic(String topic, String message) {
         try {
             kafkaTemplate.send(topic, message);
