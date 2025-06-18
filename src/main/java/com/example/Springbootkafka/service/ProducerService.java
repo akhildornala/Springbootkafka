@@ -16,6 +16,7 @@ public class ProducerService {
             kafkaTemplate.send(topic, message);
         } catch (Exception e) {
             e.printStackTrace();
+            
         }
     }
 }
