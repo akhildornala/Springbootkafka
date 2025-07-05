@@ -11,7 +11,7 @@ public class ConsumerService {
         System.out.println("received message " + message);
     }
 
-    
+
     @KafkaListener(topics = "testtopic1", groupId = "group2")
     public void listenToTopic2(String message) {
         System.out.println("received message group2 " + message);
