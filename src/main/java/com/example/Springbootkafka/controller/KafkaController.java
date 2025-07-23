@@ -14,7 +14,6 @@ public class KafkaController {
     @Autowired
     ProducerService producerService;
     
-
     @GetMapping("/send/{message}")
     public String sendMessage(@PathVariable("message") String message, @Nullable @RequestParam("topic") String topic) {
         producerService.sendMessageToTopic(topic, message);
