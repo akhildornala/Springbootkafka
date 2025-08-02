@@ -20,6 +20,5 @@ public class KafkaController {
         producerService.sendMessageToTopic(topic, message);
         return "done";
     }
-
     
 }
